@@ -1,0 +1,213 @@
+
+
+.mySlidesfade input[type=checkbox] {
+    display: none;
+  }
+  /* 
+  - Style each label that is directly after the input
+  - position: relative; will ensure that any position: absolute children will position themselves in relation to it
+  */
+  
+  .mySlidesfade input[type=checkbox] + label+img {
+    position: relative;
+  
+    /* background: url(images/Picture1.jpg) no-repeat; */
+    height: 253px;
+    width: 190px;
+    /* display: auto; */
+    /* border-radius: 50%; */
+    transition: box-shadow 0.4s, border 0.4s;
+    border: solid 2px #FFF;
+    box-shadow: 0 0 1px #FFF;/* Soften the jagged edge */
+    cursor: pointer;
+  }
+  /* Provide a border when hovered and when the checkbox before it is checked */
+  
+  .mySlidesfade input[type=checkbox] + label:hover,
+  .mySlidesfade input[type=checkbox]:checked + label {
+    border: solid 2px rgb(81, 157, 255);
+    box-shadow: 0 0 6px #3ea2ff;
+    /* Soften the jagged edge */
+  }
+
+  .neverstyle input[type=checkbox] + label:hover,
+  .neverstyle input[type=checkbox]:checked + label {
+    border: solid 2px rgb(255, 0, 0);
+  }
+  /* 
+  - Create a pseudo element :after when checked and provide a tick
+  - Center the content
+  */
+  
+  .mySlidesfade input[type=checkbox]:checked + label:after {
+    content: '\2714';
+    /*content is required, though it can be empty - content: '';*/
+    height: 2em;
+    position: absolute;
+    top: 50;
+    left: 7em;
+    bottom: 0;
+    right: 10em;
+    margin: auto;
+    color: rgb(0, 110, 255);
+    line-height: 1;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .neverstyle input[type=checkbox]:checked + label:after {
+    color: rgb(255, 0, 0);
+  }
+
+  .mySlidesfade_ccho input[type=checkbox] {
+    display: none;
+  }
+  /* 
+  - Style each label that is directly after the input
+  - position: relative; will ensure that any position: absolute children will position themselves in relation to it
+  */
+  
+  .mySlidesfade_ccho input[type=checkbox] + label+img {
+    position: relative;
+  
+    /* background: url(images/Picture1.jpg) no-repeat; */
+    height: 253px;
+    width: 190px;
+    /* display: auto; */
+    /* border-radius: 50%; */
+    transition: box-shadow 0.4s, border 0.4s;
+    border: solid 2px #FFF;
+    box-shadow: 0 0 1px #FFF;/* Soften the jagged edge */
+    cursor: pointer;
+  }
+  /* Provide a border when hovered and when the checkbox before it is checked */
+  
+  .mySlidesfade_ccho input[type=checkbox] + label:hover,
+  .mySlidesfade_ccho input[type=checkbox]:checked + label {
+    border: solid 2px rgb(62, 152, 255);
+    box-shadow: 0 0 6px #3caefe;
+    /* Soften the jagged edge */
+  }
+  /* 
+  - Create a pseudo element :after when checked and provide a tick
+  - Center the content
+  */
+  
+  .mySlidesfade_ccho input[type=checkbox]:checked + label:after {
+    content: '\2714';
+    /*content is required, though it can be empty - content: '';*/
+    height: 1em;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    margin: auto;
+    color: rgb(0, 132, 255);
+    line-height: 1;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+  .mySlidesfade_wm input[type=checkbox] {
+    display: none;
+  }
+  /* 
+  - Style each label that is directly after the input
+  - position: relative; will ensure that any position: absolute children will position themselves in relation to it
+  */
+  
+  .mySlidesfade_wm input[type=checkbox] + label+img {
+    position: relative;
+  
+    /* background: url(images/Picture1.jpg) no-repeat; */
+    height: 253px;
+    width: 190px;
+    /* display: auto; */
+    /* border-radius: 50%; */
+    transition: box-shadow 0.4s, border 0.4s;
+    border: solid 2px #FFF;
+    box-shadow: 0 0 1px #FFF;/* Soften the jagged edge */
+    cursor: pointer;
+  }
+  /* Provide a border when hovered and when the checkbox before it is checked */
+  
+  .mySlidesfade_wm input[type=checkbox] + label:hover,
+  .mySlidesfade_wm input[type=checkbox]:checked + label {
+    border: solid 2px #F00;
+    box-shadow: 0 0 6px #3caefe;
+    /* Soften the jagged edge */
+  }
+  /* 
+  - Create a pseudo element :after when checked and provide a tick
+  - Center the content
+  */
+  
+  .mySlidesfade_wm input[type=checkbox]:checked + label:after {
+    content: '\2714';
+    /*content is required, though it can be empty - content: '';*/
+    height: 1em;
+    position: absolute;
+    top: 50;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(173, 0, 0);
+    line-height: 1;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  
+
+  
+  .mySlidesfade_pp input[type=checkbox] {
+    display: none;
+  }
+  /* 
+  - Style each label that is directly after the input
+  - position: relative; will ensure that any position: absolute children will position themselves in relation to it
+  */
+  
+  .mySlidesfade_pp input[type=checkbox] + label+img {
+    position: relative;
+  
+    /* background: url(images/Picture1.jpg) no-repeat; */
+    height: 253px;
+    width: 190px;
+    /* display: auto; */
+    /* border-radius: 50%; */
+    transition: box-shadow 0.4s, border 0.4s;
+    border: solid 2px #FFF;
+    box-shadow: 0 0 1px #FFF;/* Soften the jagged edge */
+    cursor: pointer;
+  }
+  /* Provide a border when hovered and when the checkbox before it is checked */
+  
+  .mySlidesfade_pp input[type=checkbox] + label:hover,
+  .mySlidesfade_pp input[type=checkbox]:checked + label {
+    border: solid 2px #F00;
+    box-shadow: 0 0 6px #3caefe;
+    /* Soften the jagged edge */
+  }
+  /* 
+  - Create a pseudo element :after when checked and provide a tick
+  - Center the content
+  */
+  
+  .mySlidesfade_pp input[type=checkbox]:checked + label:after {
+    content: '\2714';
+    /*content is required, though it can be empty - content: '';*/
+    height: 1em;
+    position: absolute;
+    top: 50;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(173, 0, 0);
+    line-height: 1;
+    font-size: 18px;
+    text-align: center;
+  }
+  

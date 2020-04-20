@@ -1,0 +1,387 @@
+#slideshow-inner {
+002
+  width: 100%;
+003
+  height: 100%;
+004
+  background-color: rgb(0,0,0);
+005
+  overflow: hidden;
+006
+  position: relative;
+007
+}
+008
+ 
+009
+#slideshow-inner>ul {
+010
+  list-style: none;
+011
+  height: 100%;
+012
+  width: 500%;
+013
+  overflow: hidden;
+014
+  position: relative;
+015
+  left: 0px;
+016
+  -webkit-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+017
+  -moz-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+018
+  -o-transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+019
+  transition: left .8s cubic-bezier(0.77, 0, 0.175, 1);
+020
+}
+021
+ 
+022
+#slideshow-inner>ul>li {
+023
+  width: 20%;
+024
+  height: 380px;
+025
+  float: left;
+026
+  position: relative;
+027
+}
+028
+ 
+029
+#slideshow-inner>ul>li>img {
+030
+  margin: auto;
+031
+  width: 100%;
+032
+  position: relative;/*top: -50%;*/
+033
+}
+034
+ 
+035
+#slideshow-wrap input[type=radio] {
+036
+  position: absolute;
+037
+  left: 50%;
+038
+  bottom: 15px;
+039
+  z-index: 100;
+040
+  visibility: hidden;
+041
+}
+042
+ 
+043
+#slideshow-wrap label:not(.arrows):not(.show-description-label) {
+044
+  position: absolute;
+045
+  left: 50%;
+046
+  bottom: -45px;
+047
+  z-index: 100;
+048
+  width: 12px;
+049
+  height: 12px;
+050
+  -webkit-border-radius: 50%;
+051
+  -moz-border-radius: 50%;
+052
+  border-radius: 50%;
+053
+  cursor: pointer;
+054
+  -webkit-box-shadow: 0px 0px 1px rgba(0,0,0,.8);
+055
+  -moz-box-shadow: 0px 0px 1px rgba(0,0,0,.8);
+056
+  box-shadow: 0px 0px 1px rgba(0,0,0,.8);
+057
+  -webkit-transition: background-color .2s;
+058
+  -moz-transition: background-color .2s;
+059
+  -o-transition: background-color .2s;
+060
+  transition: background-color .2s;
+061
+}
+062
+ 
+063
+#slideshow-wrap label:not(.arrows):active { bottom: -46px }
+064
+ 
+065
+#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-color: rgba(100,100,100,1) }
+066
+ 
+067
+#slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(100,100,100,1) }
+068
+ 
+069
+#slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(100,100,100,1) }
+070
+ 
+071
+#slideshow-wrap input[type=radio]#button-4:checked~label[for=button-4] { background-color: rgba(100,100,100,1) }
+072
+ 
+073
+#slideshow-wrap input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(100,100,100,1) }
+074
+ 
+075
+#slideshow-wrap label[for=button-1] { margin-left: -36px }
+076
+ 
+077
+#slideshow-wrap label[for=button-2] { margin-left: -18px }
+078
+ 
+079
+#slideshow-wrap label[for=button-4] { margin-left: 18px }
+080
+ 
+081
+#slideshow-wrap label[for=button-5] { margin-left: 36px }
+082
+ 
+083
+#slideshow-wrap input[type=radio]#button-1:checked~#slideshow-inner>ul { left: 0 }
+084
+ 
+085
+#slideshow-wrap input[type=radio]#button-2:checked~#slideshow-inner>ul { left: -100% }
+086
+ 
+087
+#slideshow-wrap input[type=radio]#button-3:checked~#slideshow-inner>ul { left: -200% }
+088
+ 
+089
+#slideshow-wrap input[type=radio]#button-4:checked~#slideshow-inner>ul { left: -300% }
+090
+ 
+091
+#slideshow-wrap input[type=radio]#button-5:checked~#slideshow-inner>ul { left: -400% }
+092
+ 
+093
+label.arrows {
+094
+  font-family: 'Arial';
+095
+  font-size: 25px;
+096
+  color: rgb(255,255,240);
+097
+  position: absolute;
+098
+  top: 50%;
+099
+  margin-top: -25px;
+100
+  display: none;
+101
+  opacity: 0.7;
+102
+  cursor: pointer;
+103
+  z-index: 1000;
+104
+  background-color: transparent;
+105
+  -webkit-transition: opacity .2s;
+106
+  -moz-transition: opacity .2s;
+107
+  -o-transition: opacity .2s;
+108
+  transition: opacity .2s;
+109
+  text-shadow: 0px 0px 3px rgba(0,0,0,.8);
+110
+}
+111
+ 
+112
+label.arrows:hover { opacity: 1 }
+113
+ 
+114
+label.arrows:active { margin-top: -23px }
+115
+ 
+116
+input[type=radio]#button-1:checked~.arrows#arrow-2,
+117
+input[type=radio]#button-2:checked~.arrows#arrow-3,
+118
+input[type=radio]#button-3:checked~.arrows#arrow-4,
+119
+input[type=radio]#button-4:checked~.arrows#arrow-5 {
+120
+  right: -55px;
+121
+  display: block;
+122
+}
+123
+ 
+124
+input[type=radio]#button-2:checked~.arrows#arrow-1,
+125
+input[type=radio]#button-3:checked~.arrows#arrow-2,
+126
+input[type=radio]#button-4:checked~.arrows#arrow-3,
+127
+input[type=radio]#button-5:checked~.arrows#arrow-4 {
+128
+  left: -55px;
+129
+  display: block;
+130
+  -webkit-transform: scaleX(-1);
+131
+  -moz-transform: scaleX(-1);
+132
+  -ms-transform: scaleX(-1);
+133
+  -o-transform: scaleX(-1);
+134
+  transform: scaleX(-1);
+135
+}
+136
+ 
+137
+input[type=radio]#button-2:checked~.arrows#arrow-1 { left: -19px }
+138
+ 
+139
+input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -37px }
+140
+ 
+141
+input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
+142
+ 
+143
+.description {
+144
+  position: absolute;
+145
+  top: 0;
+146
+  left: 0;
+147
+  width: 260px;
+148
+  font-family: 'Arial';
+149
+  z-index: 1000;
+150
+}
+151
+ 
+152
+.description input { visibility: hidden }
+153
+ 
+154
+.description label {
+155
+  font-family: 'Arial';
+156
+  background-color: white;
+157
+  position: relative;
+158
+  left: -17px;
+159
+  top: 00px;
+160
+  width: 40px;
+161
+  height: 27px;
+162
+  display: inline-block;
+163
+  text-align: center;
+164
+  padding-top: 7px;
+165
+  /* border-bottom-right-radius: 15px; */
+166
+  cursor: pointer;
+167
+  opacity: 0;
+168
+  -webkit-transition: opacity .2s;
+169
+  -moz-transition: opacity .2s;
+170
+  -o-transition: opacity .2s;
+171
+  transition: opacity .2s;
+172
+  z-index: 5;
+173
+  color: rgb(20,20,20);
+174
+}
+175
+ 
+176
+#slideshow-inner>ul>li:hover .description label { opacity: 1 }
+177
+ 
+178
+.description input[type=checkbox]:checked~label { opacity: 1 }
+179
+ 
+180
+.description .description-text {
+181
+  background-color: rgba(255,255,255,.5);
+182
+  padding: 45px;
+183
+  position: relative;
+184
+  top: -35px;
+185
+  z-index: 4;
+186
+  opacity: 0;
+187
+  -webkit-transition: opacity .2s;
+188
+  -moz-transition: opacity .2s;
+189
+  -o-transition: opacity .2s;
+190
+  transition: opacity .2s;
+191
+  color: rgb(20,20,20);
+192
+}
+193
+ 
+194
+.description input[type=checkbox]:checked~.description-text { opacity: 1 }
